@@ -1,30 +1,56 @@
 {
-  "name": "diceware-wordlist-en",
+  "name": "diceware-wordlist-sp",
   "version": "1.0.0",
-  "description": "The english Diceware wordlist",
+  "description": "An spanish wordlist for the diceware password generation method",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/password-diet/npm-diceware-wordlist-en.git"
+    "url": "git+https://github.com/lgaticaq/npm-diceware-wordlist-sp.git"
   },
   "keywords": [
     "diceware",
     "wordlist",
-    "english"
+    "spanish"
   ],
-  "author": "Csaba Okrona <ochronus@ochronus.com> (https://ochronus.com)",
-  "license": "ISC",
+  "author": "Leonardo Gatica <lgatica@protonmail.com> (https://about.me/lgatica)",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/password-diet/npm-diceware-wordlist-en/issues"
+    "url": "https://github.com/lgaticaq/npm-diceware-wordlist-sp/issues"
   },
-  "homepage": "https://github.com/password-diet/npm-diceware-wordlist-en#readme",
+  "homepage": "https://github.com/lgaticaq/npm-diceware-wordlist-sp#readme",
   "devDependencies": {
-    "chai": "^3.2.0",
+    "chai": "^3.4.0",
+    "eslint": "^1.7.3",
     "js-combinatorics": "^0.5.0",
     "lodash": "^3.10.1",
-    "mocha": "^2.2.5"
+    "mocha": "^2.3.3"
+  },
+  "ecmaFeatures": {
+    "rules": {
+      "indent": [
+        2,
+        2
+      ],
+      "quotes": [
+        2,
+        "single"
+      ],
+      "linebreak-style": [
+        2,
+        "unix"
+      ],
+      "semi": [
+        2,
+        "always"
+      ]
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "extends": "eslint:recommended"
   }
 }
