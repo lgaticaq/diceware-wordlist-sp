@@ -1,6 +1,10 @@
 language: node_js
 node_js:
-  - "0.12.0"
-  - "4.0.0"
+  - "6"
+  - "7"
 notifications:
   email: false
+after_success:
+  - npm run coveralls
+  - npm run codeclimate
+cache: yarn
