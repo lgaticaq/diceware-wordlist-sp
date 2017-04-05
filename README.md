@@ -3,6 +3,8 @@
 [![npm version](https://img.shields.io/npm/v/diceware-wordlist-sp.svg?style=flat-square)](https://www.npmjs.com/package/diceware-wordlist-sp)
 [![npm downloads](https://img.shields.io/npm/dm/diceware-wordlist-sp.svg?style=flat-square)](https://www.npmjs.com/package/diceware-wordlist-sp)
 [![Build Status](https://img.shields.io/travis/lgaticaq/diceware-wordlist-sp.svg?style=flat-square)](https://travis-ci.org/lgaticaq/diceware-wordlist-sp)
+[![Coverage Status](https://img.shields.io/coveralls/lgaticaq/diceware-wordlist-sp/master.svg?style=flat-square)](https://coveralls.io/github/lgaticaq/diceware-wordlist-sp?branch=master)
+[![Code Climate](https://img.shields.io/codeclimate/github/lgaticaq/diceware-wordlist-sp.svg?style=flat-square)](https://codeclimate.com/github/lgaticaq/diceware-wordlist-sp)
 [![dependency Status](https://img.shields.io/david/lgaticaq/diceware-wordlist-sp.svg?style=flat-square)](https://david-dm.org/lgaticaq/diceware-wordlist-sp#info=dependencies)
 [![devDependency Status](https://img.shields.io/david/dev/lgaticaq/diceware-wordlist-sp.svg?style=flat-square)](https://david-dm.org/lgaticaq/diceware-wordlist-sp#info=devDependencies)
 
