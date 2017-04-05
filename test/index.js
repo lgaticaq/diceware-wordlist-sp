@@ -1,7 +1,9 @@
-var expect = require('chai').expect;
-var _ = require('lodash');
-var combinatorics = require('js-combinatorics');
-var words = require('../index');
+'use strict';
+
+const expect = require('chai').expect;
+const _ = require('lodash');
+const combinatorics = require('js-combinatorics');
+const words = require('../index');
 
 describe('wordlist', function() {
   it('should have 7776 entries', function() {
@@ -9,17 +11,17 @@ describe('wordlist', function() {
   });
 
   it('should have all possible 5-dice rolls', function() {
-  	var cmb = combinatorics.baseN(['1', '2', '3', '4', '5', '6'], 5);
-  	var cnt = 0;
-  	while(dice = cmb.next()) {
-  		diceStr = dice.join('');
-  		expect(words[diceStr], "combination: " + diceStr).to.be.a('string');
-  	}
+    const cmb = combinatorics.baseN(['1', '2', '3', '4', '5', '6'], 5);
+    while(true) { // eslint-disable-line
+      let dice = cmb.next();
+      if (typeof dice === 'undefined') break;
+      let diceStr = dice.join('');
+      expect(words[diceStr], 'combination: ' + diceStr).to.be.a('string');
+    }
   });
 
   it('should have unique words', function() {
-  	var values = _.values(words);
-  	var unique = _.uniq(values);
+    const values = _.values(words);
     expect(values.length).to.equal(_.uniq(values).length);
   });
 });
